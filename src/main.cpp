@@ -1,5 +1,4 @@
 #include <SDL2/SDL.h>
-#include <cmath>
 #include <iostream>
 #include "raycasting.h"
 
@@ -60,6 +59,8 @@ int main(int argc, char *argv[])
     double dirX = -1, dirY = 0;   // Player start direction
     double planeX = 0, planeY = 0.66; // Camera plane
 
+    setCameraAngle(&dirX, &dirY, &planeX, &planeY, 0); // Set initial camera angle
+
     bool quit = false;
     SDL_Event e;
     while (!quit)
@@ -70,7 +71,7 @@ int main(int argc, char *argv[])
                 quit = true;
         }
 
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+        SDL_SetRenderDrawColor(renderer, 135, 206, 235, 255); // Sky color
         SDL_RenderClear(renderer);
 
         drawWalls(renderer, posX, posY, dirX, dirY, planeX, planeY);
