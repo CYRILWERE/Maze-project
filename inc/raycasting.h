@@ -14,6 +14,7 @@ void initializeSDL(SDL_Window **window, SDL_Renderer **renderer);
 void cleanupSDL(SDL_Window *window, SDL_Renderer *renderer);
 void drawWalls(SDL_Renderer *renderer, double posX, double posY,
                double dirX, double dirY, double planeX, double planeY);
+void setCameraAngle(double *dirX, double *dirY, double *planeX, double *planeY, double angle);
 
 #endif /* RAYCASTING_H */
 
