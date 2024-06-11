@@ -1,16 +1,16 @@
 
-Maze Game App<br>
-Introduction
-Welcome to the Maze Game App! This is a fun and challenging maze game built using HTML, CSS, and JavaScript. The goal of the game is to navigate through the maze from the start point to the finish point without hitting any walls.
+<b>Maze Game App<b><br>
+<b>Introduction<b><br>
+<p>Welcome to the Maze Game App!<br> This is a fun and challenging maze game built using HTML, CSS, and JavaScript. The goal of the game is to navigate through the maze from the start point to the finish point without hitting any walls.<p></p>
 
-Table of Contents
-Features
-Technologies Used
-Installation
-Usage
-Contributing
+<b>Table of Contents>b>
+1.Features
+2.Technologies Used
+3.Installation
+4.Usage
+5.Contributing
 
-Features
+<b>Features<b>
 Interactive maze game with keyboard controls.
 Timer to track how long it takes to complete the maze.
 Responsive design that works on both desktop and mobile devices.
