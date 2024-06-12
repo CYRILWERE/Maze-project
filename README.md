@@ -50,84 +50,84 @@ function createWindow () {<br>
     }<br>
   });<br>
 
-  win.loadFile('index.html');
-}
+  win.loadFile('index.html');<br>
+}<br>
 
-app.whenReady().then(createWindow);
+app.whenReady().then(createWindow);<br>
 
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
-});
+app.on('window-all-closed', () => {<br>
+  if (process.platform !== 'darwin') {<br>
+    app.quit();<br>
+  }<br>
+});<br>
 
-app.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) {
-    createWindow();
-  }
-});
-Modify package.json to include the Electron start script:
-json
-Copy code
-{
-  "name": "maze-game",
-  "version": "1.0.0",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "devDependencies": {
-    "electron": "^13.1.7"
-  }
-}
-Run the app:
-bash
-Copy code
-npm start
-Running as a Mobile Application
-Using Apache Cordova
-Ensure you have Node.js installed.
-Install Cordova:
-bash
-Copy code
-npm install -g cordova
-Create a new Cordova project:
-bash
-Copy code
-cordova create maze-game-app com.example.mazegame MazeGame
-Navigate to your project directory:
-bash
-Copy code
-cd maze-game-app
-Add platforms:
-bash
-Copy code
-cordova platform add android
-cordova platform add ios
-Copy your game files into the www directory.
-Build and run the app:
-bash
-Copy code
-cordova build android
-cordova run android
+app.on('activate', () => {<br>
+  if (BrowserWindow.getAllWindows().length === 0) {<br>
+    createWindow();<br>
+  }<br>
+});<br>
+Modify package.json to include the Electron start script:<br>
+json<br>
+Copy code<br>
+{<br>
+  "name": "maze-game",<br>
+  "version": "1.0.0",<br>
+  "main": "main.js",<br>
+  "scripts":<br>
+  {<br>
+    "start": "electron ."<br>
+  },<br>
+  "devDependencies": {<br>
+    "electron": "^13.1.7"<br>
+  }<br>
+}<br>
+Run the app:<br>
+bash<br>
+Copy code<br>
+npm start<br>
+Running as a Mobile Application<br>
+Using Apache Cordova<br>
+Ensure you have Node.js installed.<br>
+Install Cordova:<br>
 
-cordova build ios
-cordova run ios
-Usage
-Controls: Use the arrow keys to navigate through the maze.
-Objective: Reach the finish point without hitting any walls.
-Contributing
-Fork the repository.
-Create a new branch for your feature or bugfix:
-bash
-Copy code
-git checkout -b feature-name
-Commit your changes:
-bash
-Copy code
-git commit -m 'Add some feature'
-Push to the branch:
-bash
-Copy code
-git push origin feature-name
-Open a pull request.
+Copy code<br>
+npm install -g cordova<br>
+Create a new Cordova project:<br>
+
+Copy code<br>
+cordova create maze-game-app com.example.mazegame MazeGame<br>
+Navigate to your project directory:<br>
+bash<br>
+Copy code<br>
+cd maze-game-app<br>
+Add platforms:<br>
+
+Copy code<br>
+cordova platform add android<br>
+cordova platform add ios<br>
+Copy your game files into the www directory.<br>
+Build and run the app:<br>
+
+Copy code<br>
+cordova build android<br>
+cordova run android<br>
+
+cordova build ios<br>
+cordova run ios<br>
+Usage<br>
+Controls: Use the arrow keys to navigate through the maze.<br>
+Objective: Reach the finish point without hitting any walls.<br>
+Contributing<br>
+Fork the repository.<br>
+Create a new branch for your feature or bugfix:<br>
+
+Copy code<br>
+git checkout -b feature-name<br>
+Commit your changes:<br>
+Copy code<br>
+git commit -m 'Add some feature'<br>
+Push to the branch:<br>
+
+Copy code<br>
+git push origin feature-name<br>
+Open a pull request.<br>
